@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            box-sizing:border-box;
+        }
+        .card {
+            border: 2px solid;
+            height: 10rem;
+            width: 10rem;
+            margin: 2rem;
+        }
+        body {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            padding-top: 5rem;
+        }
+        .blue {
+            background-color: blue;
+            box-shadow: 0px 0px 6px 5px;
+        }
+
+        .green {
+            background-color: green;
+            box-shadow: 0px 0px 6px 5px;
+        }
+
+        .red {
+            background-color: red;
+            box-shadow: 0px 0px 6px 5px;
+        }
+        .yellow {
+            background-color: yellow;
+            box-shadow: 0px 0px 6px 5px;
+        }
+
+        .orange {
+            background-color: orange;
+            box-shadow: 0px 0px 6px 5px;
+        }
+
+        .pink {
+            background-color: pink;
+            box-shadow: 0px 0px 6px 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="card" data-color="blue"></div>
+    <div class="card" data-color="red"></div>
+    <div class="card" data-color="yellow"></div>
+    <div class="card" data-color="green"></div>
+    <div class="card" data-color="orange"></div>
+    <div class="card" data-color="pink"></div>
+    <div class="card" data-color="blue"></div>
+    <div class="card" data-color="red"></div>
+    <div class="card" data-color="yellow"></div>
+    <div class="card" data-color="green"></div>
+    <div class="card" data-color="orange"></div>
+    <div class="card" data-color="pink"></div>
+    <script>
+        const cardList = document.querySelectorAll('.card');
+    cardList.forEach((card) => {
+        card.addEventListener('dblclick', (event) => {
+            const color = event.target.getAttribute('data-color');
+            event.target.classList.add(color);
+            event.target.setAttribute('data-color', 'used');
+        });
+    });
+    </script>
+</body>
+</html>
