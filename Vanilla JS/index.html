@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+</head>
+<body>
+    <div class="container">
+        <!-- Display Weather Data -->
+        <div class="weatherData">
+            <!-- 1. Location Data -->
+            <div class="data">
+                <p id="location">Location</p>
+                <p id="condition">Condition</p>
+                <img>Icon 
+            </div>
+            <!-- 2. Current Data -->
+            <div class="current">
+                <p id="temp">Temperature</p>
+                <p id="wind">Wind Speed</p>
+                <p id="humidity">Humidity</p>
+                <p id="uvIndex">UV Index</p>
+            </div>
+            <!-- 3. Astro Data -->
+            <div class="astro">
+                <!-- 3A. Sun data-->
+                <div class="sun">
+                    <p id="sunrise">sunrise</p>
+                    <p id="sunset">sunset</p>
+                </div>
+                <!-- 3A. Moon data-->
+                <div class="moon">
+                    <p id="moonrise">moonrise</p>
+                    <p id="moonset">moonset</p>
+                    <p id="moonphase">moonphase</p>
+                </div>
+            </div>
+        </div>
+        <!-- Display Search bar for Weather Data -->
+        <nav class="search">
+            <form class="form">
+                <input type="text" value="Enter City name">
+                <button type="button">Search</button>
+            </form>
+        </nav>
+
+    </div>
+</body>
+</html>
