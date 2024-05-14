@@ -3,6 +3,7 @@
     --back : #7AB2B2;
     --nav : #4D869C;
 }
+
 *{
     font-family : sans-serif;
     color : var(--fonts);
@@ -28,7 +29,7 @@
 }
 
 .data #location{
-    font-size: 4rem;
+    font-size: 5rem;
 }
 
 .data #condition, .current, .astro{
@@ -36,8 +37,8 @@
 }
 
 .data img {
-    width: 5rem;
-    height: 5rem;
+    width: 4rem;
+    height: 4rem;
 }
 
 .conditionIcon{
@@ -84,7 +85,7 @@ nav button {
     border :none;
     border-radius: 5rem;
     cursor : pointer;
-    font-size: 4rem;
+    font-size: 3rem;
     color: var(--nav);
     margin-left:3rem;
 }
