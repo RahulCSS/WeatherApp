@@ -1,0 +1,90 @@
+:root{
+    --fonts : #EEF7FF;
+    --back : #7AB2B2;
+    --nav : #4D869C;
+}
+*{
+    font-family : sans-serif;
+    color : var(--fonts);
+    margin:0;
+    padding:0;
+}
+
+.weatherData, .data, .conditionIcon, .current, .astro, .sun, .moon, nav{
+    display : flex;
+    align-items : center;
+    justify-content : center;
+}
+
+.weatherData {
+    background-color : var(--back);
+    height:85vh;
+    flex-direction: column;
+}
+
+.data{
+    padding:3rem;
+    gap:2rem;
+}
+
+.data #location{
+    font-size: 4rem;
+}
+
+.data #condition, .current, .astro{
+    font-size: 2rem;
+}
+
+.data img {
+    width: 5rem;
+    height: 5rem;
+}
+
+.conditionIcon{
+    flex-direction: column;
+    gap:0.5rem;
+}
+
+.current{
+    gap: 3rem;
+    padding:1rem;
+}
+
+.astro{
+    gap:3rem;
+    padding:1rem;
+}
+
+.sun, .moon {
+    flex-direction: column;
+    gap:1rem;
+}
+
+nav {
+    background-color: var(--nav);
+    height:15vh;
+    
+}
+
+nav input {
+    background-color: transparent;
+    width : 50vw;
+    height : 8vh;
+    border : none;
+    border-bottom: 2px solid var(--fonts);
+    outline : none;
+    font-size: 4rem;
+    padding-left: 1rem;
+    
+}
+
+nav button {
+    width: 20vw;
+    height : 7vh;
+    border :none;
+    border-radius: 5rem;
+    cursor : pointer;
+    font-size: 4rem;
+    color: var(--nav);
+    margin-left:3rem;
+}
